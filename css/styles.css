@@ -1,0 +1,412 @@
+@font-face
+{
+    font-family: 'Barlow-bold';
+    src:url(/assets/fonts/Barlow-bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face
+{
+    font-family: 'Barlow-light';
+    src:url(/assets/fonts/Barlow-light.ttf);
+    font-weight: light;
+    font-style: light;
+}
+
+@font-face
+{
+    font-family: 'Playfair-display-Regular';
+    src:url(/assets/fonts/Playfair-display-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    width: 100%;
+    display: flex;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: rgb(239,65, 56);
+}
+
+.header-logo, .footer-image
+{
+    width: 120px;
+}
+
+.header-nav
+{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.landing
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.landing-slogan, .benefits
+{
+    margin-left: 10px;
+}
+
+.title
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold; 
+}
+
+.subtitle
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold; 
+}
+
+.text
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 0.9rem; 
+    color: rgb(64, 64, 64);
+}
+
+.news
+{
+    margin: 0 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}
+
+.news-image
+{
+    width: 300px;
+}
+
+.contact
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.form
+{
+    margin-top: 20px; 
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(239,65, 56);
+    color: #fff;
+    margin-right: 10px; 
+}
+
+.form-elements
+{
+    padding: 10px 0;
+}
+
+.input
+{
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 8px; /* top right bottom left */
+    width: 80%;
+}
+
+.textarea
+{
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 8px; /* top right bottom left */
+    width: 80.5%;
+    min-height: 80px;
+    resize: vertical;
+}
+
+.select
+{
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 8px; /* top right bottom left */
+    width: 85%;
+}
+
+.label
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 0.9rem; 
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn
+{
+    margin-top: 10px;
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 8px; /* top right bottom left */
+    width: 85%;
+    min-height: 40px; 
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    color: rgb(239,65, 56);
+    font-weight: bold;
+}
+
+.comments
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.comments-image
+{
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+}
+
+.footer
+{
+    width: 100%;
+} 
+
+.footer-socia-media
+{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.links
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10px 0;
+}
+
+.links-li
+{
+    list-style-type: none;
+}
+
+.link-a
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 0.9rem; 
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+}
+
+.links-section
+{
+    margin: 0px 40px;
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 1rem;
+    font-weight: bold; 
+}
+
+
+
+
+
+/***** MEDIA QUERIES *****/
+@media screen and (max-width: 52em)
+{
+    .header-logo, .footer-image
+    {
+        width: 110px;
+    }
+
+    .header-nav
+    {
+        gap: 15px;
+    }
+
+    .header-link
+    {
+        font-size: 0.6rem;
+    }
+
+    .title
+    {
+        font-size: 1.4rem;
+    }
+
+    .subtitle
+    {
+        font-size: 1rem;
+    }
+
+    .text
+    {
+        font-size: 0.8rem; 
+    }
+
+    .news-image
+    {
+        width: 290px;
+    }
+
+    .form
+    {
+        font-size: 1rem;
+    }
+
+    .label
+    {
+        font-size: 0.8rem; 
+    }
+
+    .comments-image
+    {
+        height: 90px;
+    }
+
+    .link-a
+    {
+        font-size: 0.8rem; 
+    }
+
+    .links-section
+    {
+        font-size: 0.9rem; 
+    }
+}
+
+@media screen and (max-width: 41em)
+{
+    .header-logo, .footer-image
+    {
+        width: 100px;
+    }
+
+    .header-logo
+    {
+        margin: 0 auto;
+    } 
+
+    .header
+    {
+        flex-direction: column;
+    }
+
+    .header-nav
+    {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .header-link
+    {
+        font-size: 0.5rem;
+    }
+
+    .title
+    {
+        font-size: 1.3rem;
+    }
+
+    .subtitle
+    {
+        font-size: 0.9rem;
+    }
+
+    .text
+    {
+        font-size: 0.7rem; 
+    }
+
+    .news-image
+    {
+        width: 280px;
+    }
+
+    .form
+    {
+        font-size: 0.9rem;
+    }
+
+    .label
+    {
+        font-size: 0.7rem; 
+    }
+
+    .comments-image
+    {
+        height: 80px;
+    }
+
+    .link-a
+    {
+        font-size: 0.7rem; 
+    }
+
+    .links-section
+    {
+        font-size: 0.8rem; 
+    }
+
+    .landing, .links
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .links
+    {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (hover: hover)    
+{
+    .btn:hover
+    {
+        background-color: rgb(239,65, 56);
+        color: #fff;
+    }
+}
