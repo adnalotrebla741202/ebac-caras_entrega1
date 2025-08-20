@@ -303,41 +303,6 @@ En este proyecto se establece la base de la landing page para las suscripciones 
 
 <img width="502" height="768" alt="image" src="https://github.com/user-attachments/assets/02ba0bbc-ce1a-4e8a-8df8-3bb66a553757" />
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## <p align="center"><a href="https://github.com/adnalotrebla741202">REGRESAR</a></p>
